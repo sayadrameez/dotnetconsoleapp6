@@ -9,6 +9,11 @@
   
   <ItemGroup>
     <PackageReference Include="Autofac.Extras.Moq" Version="6.1.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="Moq" Version="4.17.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
@@ -25,6 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Console\VendingMachine.CleanArchitecture.Console.csproj" />
+    <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Core\VendingMachine.CleanArchitecture.Core.csproj" />
     <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Infrastructure\VendingMachine.CleanArchitecture.Infrastructure.csproj" />
     <ProjectReference Include="..\VendingMachine.CleanArchitecture.UnitTests\VendingMachine.CleanArchitecture.UnitTests.csproj" />
   </ItemGroup>
@@ -33,10 +40,6 @@
     <None Update="xunit.runner.json">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>

@@ -31,8 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Application\VendingMachine.CleanArchitecture.Application.csproj" />
     <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Console\VendingMachine.CleanArchitecture.Console.csproj" />
     <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Core\VendingMachine.CleanArchitecture.Core.csproj" />
+    <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Infrastructure\VendingMachine.CleanArchitecture.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

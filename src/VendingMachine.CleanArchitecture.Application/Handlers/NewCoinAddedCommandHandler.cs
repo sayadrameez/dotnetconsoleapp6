@@ -7,7 +7,7 @@ using VendingMachine.CleanArchitecture.Core.ProjectAggregate.Events;
 
 namespace VendingMachine.CleanArchitecture.Application.Handlers;
 
-internal class NewCoinAddedCommandHandler : IRequestHandler<NewCoinAddedCommand, CoinDTO>
+public class NewCoinAddedCommandHandler : IRequestHandler<NewCoinAddedCommand, CoinDTO>
 
 {
   private readonly IMediator _mediator;
