@@ -1,8 +1,6 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Ardalis.GuardClauses;
-using VendingMachine.CleanArchitecture.Core.ProjectAggregate.Events;
+﻿using Ardalis.GuardClauses;
 using MediatR;
+using VendingMachine.CleanArchitecture.Core.ProjectAggregate.Events;
 using VendingMachine.CleanArchitecture.Infrastructure.Interfaces;
 
 namespace VendingMachine.CleanArchitecture.Core.ProjectAggregate.Handlers;

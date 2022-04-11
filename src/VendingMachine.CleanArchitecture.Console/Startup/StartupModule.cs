@@ -1,24 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Autofac.Extensions.DependencyInjection;
-using MediatR;
-using Microsoft.Extensions.Hosting;
-using MediatR.Pipeline;
-using Autofac;
-using Module = Autofac.Module;
-using System.Reflection;
-using VendingMachine.CleanArchitecture.Core.ProjectAggregate;
-using VendingMachine.CleanArchitecture.Infrastructure;
+﻿using Autofac;
+using MediatR.Extensions.Autofac.DependencyInjection;
+using VendingMachine.CleanArchitecture.Application.Interfaces;
+using VendingMachine.CleanArchitecture.Application.Queries;
+using VendingMachine.CleanArchitecture.Application.Services;
 using VendingMachine.CleanArchitecture.Console.Controllers;
 using VendingMachine.CleanArchitecture.Infrastructure.Interfaces;
 using VendingMachine.CleanArchitecture.Infrastructure.Repositories;
-using MediatR.Extensions.Autofac.DependencyInjection;
-using VendingMachine.CleanArchitecture.Application.Queries;
-using VendingMachine.CleanArchitecture.Application.Services;
-using VendingMachine.CleanArchitecture.Application.Interfaces;
+using Module = Autofac.Module;
 
 namespace VendingMachine.CleanArchitecture.Console;
 

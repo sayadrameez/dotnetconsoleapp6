@@ -1,23 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Autofac;
+﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Configuration;
-
-using MediatR.Pipeline;
-using MediatR;
-using MediatR.Wrappers;
-using AutoMapper;
-
-using System.Reflection;
-using FluentValidation;
-using VendingMachine.CleanArchitecture.Application.Validators;
 using VendingMachine.CleanArchitecture.Application.Commands;
+using VendingMachine.CleanArchitecture.Application.Validators;
 
 namespace VendingMachine.CleanArchitecture.Console.Startup;
 

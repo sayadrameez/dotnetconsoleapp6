@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
+﻿using FluentValidation;
 using VendingMachine.CleanArchitecture.Core.DTO;
 
 namespace VendingMachine.CleanArchitecture.Console.Validators;
@@ -15,5 +10,5 @@ public class ConsoleViewValidator : AbstractValidator<ConsoleViewDTO>
   {
     //RuleFor(x=>x.value)
 
-  } 
+  }
 }

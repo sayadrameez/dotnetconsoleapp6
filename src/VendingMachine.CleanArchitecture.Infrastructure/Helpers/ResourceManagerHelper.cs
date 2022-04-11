@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 using System.Resources;
 using VendingMachine.CleanArchitecture.Core.DTO;
-using System.Globalization;
 
 namespace VendingMachine.CleanArchitecture.Infrastructure.Helpers;
 
@@ -39,14 +34,14 @@ public static class ResourceManagerHelper
     }
   }
 
-  internal static string? GetValue(string resourcetype,string key,string lang)
+  internal static string? GetValue(string resourcetype, string key, string lang)
   {
     var cultureInfo = CultureInfo.GetCultureInfo(lang);
     switch (resourcetype)
     {
       case "DisplayMessage":
         return DisplayMessageManObj.GetString(key, cultureInfo);
-          
+
       case "Menu":
         return ResourceManagerObj.GetString(key, cultureInfo);
       default:

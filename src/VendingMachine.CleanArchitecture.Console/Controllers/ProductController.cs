@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using VendingMachine.CleanArchitecture.Application.Commands;
 using VendingMachine.CleanArchitecture.Application.Queries;
 using VendingMachine.CleanArchitecture.Core.DTO;
@@ -26,7 +21,7 @@ public class ProductController : BaseController
     return result;
   }
 
-  public async Task<SelectProductResponseDTO> SelectProduct(int selectedProduct,string lang,CoinDTO coinDTO,ProductsDTO productsDTO)
+  public async Task<SelectProductResponseDTO> SelectProduct(int selectedProduct, string lang, CoinDTO coinDTO, ProductsDTO productsDTO)
   {
     var result = await _mediator.Send(new SelectProductCommand()
     {

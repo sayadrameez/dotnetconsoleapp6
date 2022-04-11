@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VendingMachine.CleanArchitecture.Application.Commands;
+﻿using VendingMachine.CleanArchitecture.Application.Commands;
 using VendingMachine.CleanArchitecture.Application.Interfaces;
 using VendingMachine.CleanArchitecture.Core.DTO;
-using VendingMachine.CleanArchitecture.Infrastructure.Extensions;
 
 namespace VendingMachine.CleanArchitecture.Application.Services;
 

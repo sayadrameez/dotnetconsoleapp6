@@ -3,7 +3,6 @@
 //using VendingMachine.CleanArchitecture.Core.ProjectAggregate.Events;
 //using VendingMachine.CleanArchitecture.Core.ProjectAggregate.Handlers;
 using Autofac.Extras.Moq;
-using Moq;
 using VendingMachine.CleanArchitecture.Console.Controllers;
 using VendingMachine.CleanArchitecture.Core.DTO;
 using Xunit;

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
+﻿using FluentValidation;
 using VendingMachine.CleanArchitecture.Application.Commands;
 using VendingMachine.CleanArchitecture.Infrastructure.Interfaces;
 
@@ -13,7 +8,7 @@ public class NewCoinValidator : AbstractValidator<NewCoinAddedCommand>
 {
   public NewCoinValidator(IMenuRepository menuRepository)
   {
-    
+
     //RuleFor(x => x.CoinValue)      
     //    .Equal(0.01m)
     //    .WithMessage(x =>

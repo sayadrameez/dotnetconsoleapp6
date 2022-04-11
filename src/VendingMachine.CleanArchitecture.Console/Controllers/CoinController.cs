@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using VendingMachine.CleanArchitecture.Application.Commands;
 using VendingMachine.CleanArchitecture.Core.DTO;
-using VendingMachine.CleanArchitecture.Core.ProjectAggregate.Events;
 
 namespace VendingMachine.CleanArchitecture.Console.Controllers;
 
