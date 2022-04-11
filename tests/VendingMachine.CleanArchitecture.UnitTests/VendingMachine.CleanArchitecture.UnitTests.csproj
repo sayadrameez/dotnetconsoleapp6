@@ -9,11 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Core\Services\ToDoItemSearchService_GetAllIncompleteItems.cs" />
-    <Compile Remove="Core\Services\ToDoItemSearchService_GetNextIncompleteItem.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Autofac.Extras.Moq" Version="6.1.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <PrivateAssets>all</PrivateAssets>
@@ -35,12 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Core\ProjectAggregate\" />
-    <Folder Include="Core\Services\" />
-    <Folder Include="Core\Specifications\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Console\VendingMachine.CleanArchitecture.Console.csproj" />
     <ProjectReference Include="..\..\src\VendingMachine.CleanArchitecture.Core\VendingMachine.CleanArchitecture.Core.csproj" />
   </ItemGroup>
 

@@ -49,7 +49,7 @@ public class ConsoleView : IHostedService
   }
   //TODO: breakup into smaller classes
   //TODO: language needs to be set in a context rather than a variable
-  private async Task<string> DetermineResponse(ConsoleViewDTO resp, CoinDTO initialCoinDTO, string lang, ProductsDTO initialProducts)
+  public async Task<string> DetermineResponse(ConsoleViewDTO resp, CoinDTO initialCoinDTO, string lang, ProductsDTO initialProducts)
   {
     switch (resp.action)
     {
@@ -89,7 +89,7 @@ public class ConsoleView : IHostedService
     return Task.CompletedTask;
   }
 
-  private async Task<ConsoleViewDTO> DetermineAction(string? input, CoinDTO coinDTO, string lang, ProductsDTO initialProducts)
+  public async Task<ConsoleViewDTO> DetermineAction(string? input, CoinDTO coinDTO, string lang, ProductsDTO initialProducts)
   {
     var consoleviewValidator = new ConsoleViewValidator();
     if (string.IsNullOrWhiteSpace(input))
